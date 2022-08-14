@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:4.4.6
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo --quiet) -eq 1
+      interval: 10s
+      start_period: 30s
+    command: "--bind_ip_all --replSet rs0"
+    environment:
+      # provide your credentials here
+      - MONGO_REPLICA_SET_NAME=rs0
+    ports:
+      - "27117:27017"
+    network_mode: host
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    network_mode: host

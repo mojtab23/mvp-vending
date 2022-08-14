@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "62f687e1a89d000d797d9e05",
+    "username": "admin",
+    "password": "$2a$10$SrFvh.NgMJLyuDEfy74Vmul.ES/f1IUEkpsnjAJR/qIjUGAr7.9Ia",
+    "deposit": 0,
+    "roles": [
+      "Seller",
+      "Buyer"
+    ],
+    "_class": "com.javidconsulting.mvpvending.model.User"
+  },
+  {
+    "_id": "62f687e1a89d000d797d9e06",
+    "username": "user",
+    "password": "$2a$10$SrFvh.NgMJLyuDEfy74Vmul.ES/f1IUEkpsnjAJR/qIjUGAr7.9Ia",
+    "deposit": 0,
+    "roles": [
+      "Buyer"
+    ],
+    "_class": "com.javidconsulting.mvpvending.model.User"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "62f68a4da89d000d797d9e06",
+    "productName": "Drink",
+    "amountAvailable": 5,
+    "cost": 35,
+    "sellerId": "62f687e1a89d000d797d9e05",
+    "_class": "com.javidconsulting.mvpvending.model.Product"
+  }
+]

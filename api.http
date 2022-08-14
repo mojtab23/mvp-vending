@@ -1,0 +1,98 @@
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+###
+POST http://localhost:8080/logout
+Content-Type: application/json
+
+###
+POST http://localhost:8080/logout/all
+Content-Type: application/json
+
+###
+GET http://localhost:8080/
+Accept: application/json
+
+###
+GET http://localhost:8080/user
+Accept: application/json
+
+###
+GET http://localhost:8080/user/62f92435c302422026489539
+Accept: application/json
+
+###
+GET http://localhost:8080/me
+Accept: application/json
+
+###
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "31@Mehriz41"
+}
+
+###
+DELETE http://localhost:8080/user/62bac36fc331fd62be0d1b02
+
+###
+GET http://localhost:8080/products
+Accept: application/json
+
+###
+GET http://localhost:8080/product/62f2aea3544ea56d18ae4420
+Accept: application/json
+
+###
+POST http://localhost:8080/product
+Content-Type: application/json
+
+{
+  "productName": "Drink",
+  "amountAvailable": 5,
+  "cost": 35
+}
+
+###
+PUT http://localhost:8080/user/62f92435c302422026489539
+Content-Type: application/json
+
+{
+  "password": "password",
+  "deposit": 21,
+  "roles": [
+    "Seller",
+    "Buyer"
+  ]
+}
+
+###
+POST http://localhost:8080/deposit
+Content-Type: application/json
+
+5
+
+###
+POST http://localhost:8080/deposit
+Content-Type: application/json
+
+100
+
+###
+POST http://localhost:8080/buy
+Content-Type: application/json
+
+{
+  "productId": "62f68a4da89d000d797d9e06",
+  "amount": 2
+}
+
+###

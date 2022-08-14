@@ -1,0 +1,11 @@
+logging:
+  level:
+    com.javidconsulting.mvpvending: DEBUG
+    org.springframework.security: DEBUG
+server:
+  error:
+    include-stacktrace: never
+spring:
+  data:
+    mongodb:
+      database: "mvp-vending"
